@@ -1,0 +1,183 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="images/x-icon" href="https://cdn.finmastercdn.com/static/www/favicon.ico">
+    <title>FM182237</title>
+    <meta name='description' content=''>
+
+    <!-- 标准 -->
+    <meta property='og:url' content='https://st.finmaster.com/home/page/person/5f22bc37eb392716901de1e4'>
+    <meta property='og:title' content='FM182237'>
+    <meta property='og:image' content='https://cdn.finmastercdn.com/default/avatar/60.jpg'>
+    <meta property='og:description' content=''>
+
+    <!-- 专有 -->
+    <meta name='twitter:card' content='summary'>
+    <meta property='fb:app_id' content='288385635196825'>
+    <meta property="al:android:url" content="finmaster://finmater.com?action=/user/invite/friend?id=FM182237&uid=5f22bc37eb392716901de1e4">
+    <meta property="al:android:package" content="net.moftech.app">
+    <meta property="al:android:app_name" content="金融達人">
+    <meta property="al:ios:url" content="finmaster://finmater.com?action=/user/invite/friend?id=FM182237&uid=5f22bc37eb392716901de1e4" />
+    <meta property="al:ios:app_store_id" content="1463614031"/>
+    <meta property="al:ios:app_name" content="金融達人" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="https://cdn.finmastercdn.com/static/mp/css/bootstrap.min2.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.finmastercdn.com/static/mp/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.finmastercdn.com/static/mp/css/finmaster_share.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.finmastercdn.com/static/mp/css/qr_share.css" type="text/css">
+</head>
+
+<body>
+<!-- page start -->
+<div class="page">
+    <!-- main start -->
+    <div class="main">
+        <!-- 內文 開始 -->
+        <div class="qr_box">
+            <div class="qr_content">
+                <div class="user_photo">
+                    <img src="https://cdn.finmastercdn.com/default/avatar/60.jpg">
+                </div>
+                <div class="user_name">
+                    FM182237                </div>
+                <div class="user_status">
+                                    </div>
+                <div class="qr_photo">
+                    <img src="https://cdn.finmastercdn.com/static/mp/images/share/qr_photo.png">
+                </div>
+                <div class="blank"></div>
+
+                <!-- 分享自己樣式 開始 -->
+                                    <div class="invite">
+                        <div class="i_w">
+                            <span class="gray">邀請碼：</span>FM182237                        </div>
+                        <div class="cpoy_btn copy">
+                            <a href="javascript:void(0)">複製</a>
+                        </div>
+                    </div>
+                
+                                    <!-- 手機閱讀樣式 開始 -->
+                    <div class="attention_box view_m">
+                        <div class="logo_box">
+                            <img src="https://cdn.finmastercdn.com/static/mp/images/share/logo.png">
+                        </div>
+                        <div class="d_btn">
+                            <a href="javascript:void(0)" class="d_btn_a">點我下載</a>
+                        </div>
+                        <div class="d_w">
+                            立即下載加關注<br>
+                            隨時隨地接收最新動態
+                        </div>
+                    </div>
+                    <!-- 手機閱讀樣式 結束 -->
+                            </div>
+        </div>
+        <!-- 內文 結束 -->
+
+        <!-- app介紹 開始 -->
+        <div class="app_box">
+            <div class="ab_b">
+                <a href="javascript:void(0)" class="pic_link"><img src="https://cdn.finmastercdn.com/static/mp/images/share/finmaster9.jpg"></a>
+        </div>
+        </div>
+        <!-- app介紹 結束 -->
+    </div>
+    <!-- main end -->
+</div>
+<!-- page end -->
+</body>
+
+<script src="https://cdn.finmastercdn.com/static/mp/js/zepto.min.js"></script>
+<script>
+    window.Clipboard = (function(window, document, navigator) {
+        var textArea,
+            copy;
+
+        // 判断是不是ios端
+        function isOS() {
+            return navigator.userAgent.match(/ipad|iphone/i);
+        }
+        //创建文本元素
+        function createTextArea(text) {
+            textArea = document.createElement('textArea');
+            textArea.innerHTML = text;
+            textArea.value = text;
+            document.body.appendChild(textArea);
+        }
+        //选择内容
+        function selectText() {
+            var range,
+                selection;
+
+            if (isOS()) {
+                range = document.createRange();
+                range.selectNodeContents(textArea);
+                selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                textArea.setSelectionRange(0, 999999);
+            } else {
+                textArea.select();
+            }
+        }
+
+        //复制到剪贴板
+        function copyToClipboard() {
+            if(document.execCommand("Copy")){
+                alert("邀請碼已複製");
+            } else {
+                alert("邀請碼複製失敗！請手動複製！");
+            }
+            document.body.removeChild(textArea);
+        }
+
+        copy = function(text) {
+            createTextArea(text);
+            selectText();
+            copyToClipboard();
+        };
+
+        return {
+            copy: copy
+        };
+
+    })(window, document, navigator);
+
+    $(document).ready(function () {
+        var documentWidth = $(window).width();
+        if (documentWidth > 638) {
+            documentWidth = 638;
+        }
+        var list = document.all;
+        for (var i = 0; i < list.length; i++) {
+            var frame = list[i];
+            if (frame.style != undefined && (parseInt(frame.style.width) > documentWidth || frame.style.width == undefined)) {
+                frame.style.width='100%'
+            }
+            if (documentWidth < frame.width || frame.width == undefined) {
+                frame.width = '100%'
+            }
+        }
+
+        //外部下载
+        let eventType = ("createTouch" in document) ? 'tap' : 'click';
+
+        //iOS 和qq 不适用
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            $(".ab_b, .d_btn_a, .pic_link").attr('href', 'https://appfinmaster.page.link/Q5AV')
+            return false;
+        } else {
+            $(".ab_b, .d_btn_a, .pic_link").attr('href', 'https://www.finmaster.com/')
+            return false;
+        }
+
+        $(".copy").on(eventType, function () {
+            Clipboard.copy('FM182237');
+        });
+    });
+
+</script>
+
+</html>
